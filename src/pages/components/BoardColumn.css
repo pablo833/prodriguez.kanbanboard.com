@@ -1,0 +1,33 @@
+.container-column{
+    display: flex;
+    text-align: center;
+   
+    margin:5px;
+    flex-direction: column;
+    box-shadow: 0 2px 2px 0 rgba(0,0,0,0.2);
+    width: 100%;
+   
+}
+.column-header{
+    background-color: bisque;
+   
+    font-weight: bold;
+    height: 40px;
+}
+.button-column{
+    background-color: #fff;
+    border: 2px solid #e7e7e7;
+    color: black;
+    cursor: pointer;
+    text-decoration:none;
+}
+.footer{
+   text-align: right;
+}
+
+.content-column{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+}

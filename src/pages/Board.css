@@ -1,0 +1,13 @@
+.container-board{
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    margin-top: 40px;
+}
+.container-board-column{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-left: 20px;
+    margin-right: 20px;   
+}
