@@ -11,8 +11,8 @@ export default class Home extends Component {
         this.state = {
             boards: []
         };
+
         this.createBoards = this.createBoards.bind(this);
-        this.createBoards2 = this.createBoards2.bind(this);
         this.addBoard = this.addBoard.bind(this);
     }
 
@@ -30,21 +30,14 @@ export default class Home extends Component {
     }
 
     createBoards() {
-        var boardList = this.state.boards.map((element, index) => {
-            return <BoardCard key={index} name={element.board._name} boardID={element.board._id} />
-        });
-        return boardList;
-    }
-
-    createBoards2() {
         var boardList = this.state.boards.map(function (element, index) {
 
             return <Link key={index}
                 to={'board/' + element.board._id}>
-                <div className="contianer-home-card">
+                <div className="home-board-card">
                     <b>{"ID: " + element.board._id}</b>
                     <b>{element.board._name}</b>
-                    <div className="footer"></div>
+                   
                 </div>
             </Link>
 
@@ -73,16 +66,14 @@ export default class Home extends Component {
     render() {
         return (
 
-            <div className="container-Home-board2" >
-                <div className="ontainer-Home-createBoard">
-
+            <div className="container-Home" >
+                <div className="create-Board">
                     <input className="input" placeholder="Enter Board Name">
                     </input>
-                    <button className="button" type="submit" onClick={this.addBoard}>add</button>
-
+                    <button className="button" type="submit" onClick={this.addBoard}>Add</button>
                 </div>
-                <div className="container-Home-board" >
-                    {this.createBoards2()}
+                <div className="body-boards" >
+                    {this.createBoards()}
                 </div>
             </div>
 

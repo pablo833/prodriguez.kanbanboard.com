@@ -34,7 +34,7 @@ export default class BoardColumn extends Component {
                     <div>
                         {this.generateBoardTasks()}
                     </div>
-                    <div className="footer">
+                    <div className="boardColumn-footer">
                         <button className="button-column" onClick={this.addTask.bind(this)}>Add +</button>
                     </div>
                 </div>

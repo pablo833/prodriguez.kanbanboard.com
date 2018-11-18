@@ -1,8 +1,12 @@
+body {margin:0;
+    background: #d39f80;}
+
 .container-board{
     display: flex;
     text-align: center;
     flex-direction: column;
     margin-top: 40px;
+   
 }
 .container-board-column{
     display: flex;
